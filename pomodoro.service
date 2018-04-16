@@ -1,0 +1,12 @@
+[Service]
+WorkingDirectory=/home/pi/reverse-pomodoro
+ExecStart=/usr/bin/node --expose-gc /home/pi/reverse-pomodoro/server.js
+Restart=always
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=pomodoro
+User=root
+Group=root
+Environment=NODE_ENV=production
+[Install]
+WantedBy=multi-user.target
