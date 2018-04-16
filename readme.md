@@ -28,18 +28,17 @@ TODO: Eventually I'd like to integrate this with Evernote where each day a new n
 
 1. Git clone
 2. npm install
-- Get a Twilio phone number
-- Update environment variables in `.env`  
-- Test it out locally with [ngrok](https://ngrok.com/) by running `npm start`
-- Set the Twilio inbound SMS webhook to your ngrok URL + `/reverse-pomodoro/sms`
-- Does it work? Great, move on.
-- Fire up a fresh Raspberry Pi on your local network
-- SSH into the Pi and install the latest NodeJS (see below)
-- FTP into the Pi and upload the Node app or git clone and update env on the device
-- From your router port-forward port 80 to your RaspberryPi's port 8080
-- Update the Twilio webhook URL with your networks public IP
-- Refer to this post about adding a Service to your Pi for this starts at startup
-  -
+1. Get a Twilio phone number
+1. Update environment variables in `.env`  
+1. Test it out locally with [ngrok](https://ngrok.com/) by running `npm start`
+1. Set the Twilio inbound SMS webhook to your ngrok URL + `/reverse-pomodoro/sms`
+1. Does it work? Great, move on.
+1. Fire up a fresh Raspberry Pi on your local network
+1. SSH into the Pi and install the latest NodeJS (see below)
+1. FTP into the Pi and upload the Node app or git clone and update env on the device
+1. From your router port-forward port 80 to your RaspberryPi's port 8080
+1. Update the Twilio webhook URL with your networks public IP
+1. Refer below for instructions to add a startup Service on the Pi
 
 ### Installing NodeJS on the Raspberry Pi
 
